@@ -11,7 +11,7 @@ void prompt(void)
 
 	if (isatty(STDIN_FILENO))
 	{
-		write(STDOUT_FILENO, prompt, 2);
+		write(STDOUT_FILENO, shell_sign, 2);
 	}
 }
 
