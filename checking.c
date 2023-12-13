@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * checkpathcorrection - checks if the command exists
- *
- * @com: command to check
- *
- * Return: command path if it exists, 
- */
+* checkpathcorrection - checks if the command exists
+*
+* @com: command to check
+*
+* Return: command path if it exists
+*/
+
 char *checkpathcorrection(const char *com)
 {
 	char *my_path, *newpath, *commandfull, *folder, *commanddub;
@@ -50,9 +51,8 @@ char *checkpathcorrection(const char *com)
 	free(commanddub);
 	return (NULL);
 }
-
 /**
- * exit - exits the shell if only exit provided
+ * exitfuncs - exits the shell if only exit provided
  *
  * @exitcommand: array of commands strings
  *
