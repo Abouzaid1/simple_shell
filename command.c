@@ -4,7 +4,7 @@
 * all_command - free a full command  array
 *
 * @fullque: array of command
-* 
+*
 * Return: void
 */
 
