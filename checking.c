@@ -56,7 +56,7 @@ char *checkpathcorrection(const char *com)
 *
 * @exitcommand: array of commands strings
 *
-* Return: -1 
+* Return: -1
 */
 
 int exitfuncs(char **exitcommand)
