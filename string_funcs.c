@@ -17,10 +17,10 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_byte
 	{
 		if (str_one[index] != str_two[index])
 		{
-			return 1;
+			return (1);
 		}
 	}
-	return 0;
+	return (0);
 }
 
 /**
@@ -37,9 +37,9 @@ int strLen_func(const char *my_input)
 
 	for (my_length = 0; my_input[my_length] != '\0'; my_length++)
 	{
-		return 0;
+		return (0);
 	}
-	return my_length;
+	return (my_length);
 }
 
 /**
@@ -67,7 +67,7 @@ char *strduplicate_func(const char *original)
 	}
 
 	duplicate[index] = '\0';
-	return duplicate;
+	return (duplicate);
 }
 
 /**
@@ -88,7 +88,7 @@ char *strcopy_func(char *destination, const char *source)
 	}
 
 	destination[index] = '\0';
-	return destination;
+	return (destination);
 }
 
 /**
@@ -105,11 +105,11 @@ char *strconcat_func(char *destination, const char *source)
 
 	if (source == NULL)
 	{
-		return destination;
+		return (destination);
 	}
 	for (destIndex = 0; destination[destIndex] != '\0'; destIndex++)
 	{
-		return 0;
+		return (0);
 	}
 	for (srcIndex = 0; source[srcIndex] != '\0'; srcIndex++)
 	{
