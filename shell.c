@@ -3,8 +3,8 @@
 /**
  * main - main shell to execute commands
  *
- * @argc: number of arguments
- * @argv: array of strings of arguments
+ * @argc: number
+ * @argv: array
  * @env: environment variables
  *
  * Return: 0 on success, -1 on failure
@@ -20,22 +20,22 @@ int main(int argc, char **argv, char **env)
 		char *get_input;
 		char **full_command;
 
-		_print_prompt();
-		get_input = _get_input();
+		prompt();
+		get_input = input();
 		if (get_input[0] == '\n' || get_input == NULL)
 		{
 			free(get_input);
 			continue;
 		}
-		full_command = _create_full_command(get_input);
+		full_command = createcommand(get_input);
 		free(get_input);
 		get_input = NULL;
 		if (full_command == NULL)
 			continue;
-		if (_check_exit(full_command) == -1)
+		if (exitfuncs(full_command) == -1)
 		{
-			_error_handler(argv[0], counter, full_command, 0);
-			_free_full_command(full_command);
+			handler(argv[0], counter, full_command, 0);
+			all_command(full_command);
 			if (!isatty(STDIN_FILENO))
 				exit(2);
 			counter++;
@@ -43,11 +43,11 @@ int main(int argc, char **argv, char **env)
 		}
 		if (stringcompare_func(full_command[0], "env", 3) == 0)
 		{
-			_print_env(env);
+			environment(env);
 			continue;
 		}
-		_execute_command(argv, full_command, counter, env);
-		_free_full_command(full_command);
+		execommand(argv, full_command, counter, env);
+		all_command(full_command);
 		full_command = NULL;
 		counter++;
 	}

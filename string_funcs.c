@@ -11,7 +11,8 @@
  */
 int stringcompare_func(const char *str_one, const char *str_two, size_t num_bytes)
 {
-	for (size_t index = 0; index < num_bytes; index++)
+	size_t index = 0;
+	for (index = 0; index < num_bytes; index++)
 	{
 		if (str_one[index] != str_two[index])
 			return 1;
@@ -31,7 +32,7 @@ int strLen_func(const char *my_input)
 {
     int my_length = 0;
 
-    for (my_length = 0; my_input[my_length] != '\0'; my_length++);my_length;
+    for (my_length = 0; my_input[my_length] != '\0'; my_length++);
 
     return my_length;
 }
@@ -48,7 +49,7 @@ char *strduplicate_func(const char *original)
     char *duplicate;
     int index;
 
-    duplicate = malloc(sizeof(char) * (strLen_fun(original) + 1));
+    duplicate = malloc(sizeof(char) * (strLen_func(original) + 1));
     if (duplicate == NULL)
     {
         perror("malloc");
