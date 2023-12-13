@@ -11,7 +11,7 @@
 
 
 
-pid_t wait(int *status);
+
 
 extern char **environ;
 

@@ -11,6 +11,7 @@
 void all_command(char **fullque)
 {
 	int index;
+
 	index = 0;
 	while (fullque[index] != NULL)
 	{
