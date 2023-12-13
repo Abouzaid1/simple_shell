@@ -9,11 +9,11 @@
 *
 * Returns: 0 if strings are equal up to num_bytes, 1 otherwise
 */
-int stringcompare_func(const char *str_one, const char *str_two, size_t num_bytes)
+int stringcompare_func(const char *str_one, const char *str_two, size_t num_by)
 {
 	size_t index = 0;
 
-	for (index = 0; index < num_bytes; index++)
+	for (index = 0; index < num_by; index++)
 	{
 		if (str_one[index] != str_two[index])
 		{
