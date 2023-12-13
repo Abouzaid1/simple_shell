@@ -35,7 +35,7 @@ int strLen_func(const char *my_input)
 {
 	int my_length = 0;
 
-	for (my_length = 0; my_input[my_length] != '\0'; my_length++);
+	for (my_length = 0; my_input[my_length] != '\0'; my_length++)
 	{
 		return 0;
 	}
