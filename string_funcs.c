@@ -24,11 +24,11 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_byte
 }
 
 /**
-* strLen_func - calculate length 
+* strLen_func - calculate length
 *
 * @my_input: custom string
 * @my_length: length of input
-* 
+*
 * Return: length of the custom string
 */
 int strLen_func(const char *my_input)
