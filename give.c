@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * input - get's input from the user
- *
- * Return: pointer to string holding input
+* input - get's input from the user
+*
+* Return: pointer to string holding input
 */
 char *input(void)
 {

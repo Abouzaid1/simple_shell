@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * convertIntegar - converts
- *
- * @num: the changed number
- *
- * Return: string
+* convertIntegar - converts
+*
+* @num: the changed number
+*
+* Return: string
 */
 char *convertIntegar(int num)
 {

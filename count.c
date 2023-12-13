@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * countcom - count number of commands
- *
- * @com: full command to count its number of commands
- *
- * Return: number of commands
- */
+* countcom - count number of commands
+*
+* @com: full command to count its number of commands
+*
+* Return: number of commands
+*/
 int countcom(const char *com)
 {
 	char *onecommand, *comcpy;

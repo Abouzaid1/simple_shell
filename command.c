@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * all_command - free a full command  array
- *
- * @fullque: array of command
- * 
- * Return: void
- */
+* all_command - free a full command  array
+*
+* @fullque: array of command
+* 
+* Return: void
+*/
 
 void all_command(char **fullque)
 {
@@ -21,15 +21,15 @@ void all_command(char **fullque)
 }
 
 /**
- * execommand - executes a command provided by the user
- *
- * @argv: main program arguments
- * @com: array of string as command and its arguments
- * @countnum: command counter
- * @enviro: environment
- *
- * Return: 0 on success
- */
+* execommand - executes a command provided by the user
+*
+* @argv: main program arguments
+* @com: array of string as command and its arguments
+* @countnum: command counter
+* @enviro: environment
+*
+* Return: 0 on success
+*/
 int execommand(char **argv, char **com, int countnum, char **enviro)
 {
 	pid_t childvar;

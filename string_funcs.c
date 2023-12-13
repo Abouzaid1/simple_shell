@@ -1,14 +1,14 @@
 #include "shell.h"
 
 /**
- * stringcompare_func - compares two strings up to a specified number of bytes
- *
- * @str_one: first string
- * @str_two: second string
- * @num_bytes: number of bytes to compare
- *
- * Returns: 0 if strings are equal up to num_bytes, 1 otherwise
- */
+* stringcompare_func - compares two strings up to a specified number of bytes
+*
+* @str_one: first string
+* @str_two: second string
+* @num_bytes: number of bytes to compare
+*
+* Returns: 0 if strings are equal up to num_bytes, 1 otherwise
+*/
 int stringcompare_func(const char *str_one, const char *str_two, size_t num_bytes)
 {
 	size_t index = 0;
@@ -21,13 +21,13 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_byte
 }
 
 /**
- * strLen_func - calculate length of input excluding \0
- *
- * @my_input: custom string
- * @my_length: length of input
- * 
- * Return: length of the custom string
- */
+* strLen_func - calculate length of input excluding \0
+*
+* @my_input: custom string
+* @my_length: length of input
+* 
+* Return: length of the custom string
+*/
 int strLen_func(const char *my_input)
 {
     int my_length = 0;
@@ -38,12 +38,12 @@ int strLen_func(const char *my_input)
 }
 
 /**
- * strduplicate_func - duplicates a string
- *
- * @original: string to be duplicated
- *
- * Return: duplicate  string
- */
+* strduplicate_func - duplicates a string
+*
+* @original: string to be duplicated
+*
+* Return: duplicate  string
+*/
 char *strduplicate_func(const char *original)
 {
     char *duplicate;
@@ -64,13 +64,13 @@ char *strduplicate_func(const char *original)
 }
 
 /**
- * strcopy_func - copies a string from source to destination
- *
- * @destination: string to copy to
- * @source: string to copy from
- *
- * Return: pointer to the destination
- */
+* strcopy_func - copies a string from source to destination
+*
+* @destination: string to copy to
+* @source: string to copy from
+*
+* Return: pointer to the destination
+*/
 char *strcopy_func(char *destination, const char *source)
 {
     int index;
@@ -83,13 +83,13 @@ char *strcopy_func(char *destination, const char *source)
 }
 
 /**
- * customStrConcat - concatenate source string to destination string
- *
- * @destination: destination string to concatenate to
- * @source: source string to concatenate from
- *
- * Return: new destination string
- */
+* customStrConcat - concatenate source string to destination string
+*
+* @destination: destination string to concatenate to
+* @source: source string to concatenate from
+*
+* Return: new destination string
+*/
 char *strconcat_func(char *destination, const char *source)
 {
     int destIndex, srcIndex;
@@ -108,12 +108,12 @@ char *strconcat_func(char *destination, const char *source)
 }
 
 /**
- * stringtoint_func - converts a string into a long integer
- *
- * @input_string: string that changed
- *
- * Return: long integer
- */
+* stringtoint_func - converts a string into a long integer
+*
+* @input_string: string that changed
+*
+* Return: long integer
+*/
 long int stringtoint_func(char *input_string)
 {
     long int result = 0;

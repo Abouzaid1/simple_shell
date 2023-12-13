@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * createcommand - creates an array of strings from a command
- *
- * @com: command to create an array of strings from
- *
- * Return: array of strings of the full command
- */
+* createcommand - creates an array of strings from a command
+*
+* @com: command to create an array of strings from
+*
+* Return: array of strings of the full command
+*/
 char **createcommand(const char *com)
 {
 	int nullcom, i;

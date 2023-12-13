@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * prompt - gives "$ " prompt to the user
- * @shell_sign: the sign of the shell
- * Return: void
- */
+* prompt - gives "$ " prompt to the user
+* @shell_sign: the sign of the shell
+* Return: void
+*/
 void prompt(void)
 {
 	char *shell_sign = "$ ";
@@ -16,11 +16,11 @@ void prompt(void)
 }
 
 /**
- * env - prints environment variables
- *
- * @env_variable: environment variables
- *
- * Return: void
+* env - prints environment variables
+*
+* @env_variable: environment variables
+*
+* Return: void
 */
 void environment(char **env_variable)
 {

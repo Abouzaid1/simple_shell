@@ -1,15 +1,15 @@
 #include "shell.h"
 
 /**
- * handler - prints error messages like sh
- *
- * @yet: my shell's yet
- * @com: com written
- * @countnum: com countnum
- * @yetstatu: error yetstatu, put 0 for exit, otherwise 1
- *
- * Return: void
- */
+* handler - prints error messages like sh
+*
+* @yet: my shell's yet
+* @com: com written
+* @countnum: com countnum
+* @yetstatu: error yetstatu, put 0 for exit, otherwise 1
+*
+* Return: void
+*/
 void handler(char *yet, int countnum, char **com, int yetstatu)
 {
 	char *string_countnum;

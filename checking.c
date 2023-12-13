@@ -52,11 +52,11 @@ char *checkpathcorrection(const char *com)
 	return (NULL);
 }
 /**
- * exitfuncs - exits the shell if only exit provided
- *
- * @exitcommand: array of commands strings
- *
- * Return: -1 
+* exitfuncs - exits the shell if only exit provided
+*
+* @exitcommand: array of commands strings
+*
+* Return: -1 
 */
 
 int exitfuncs(char **exitcommand)
