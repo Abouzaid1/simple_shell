@@ -14,7 +14,7 @@ extern char **environ;
 
 int strLen_func(const char *my_input);
 char *strcopy_func(char *destination, const char *source);
-int stringcompare_func(const char *str_one, const char *str_two, size_t num_bytes);
+int stringcompare_func(const char *str_one, const char *str_two, size_t num_by);
 char *strduplicate_func(const char *original);
 long int stringtoint_func(char *input_string);
 void prompt(void);

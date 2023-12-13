@@ -5,9 +5,9 @@
 *
 * @str_one: first string
 * @str_two: second string
-* @num_bytes: number of bytes to compare
+* @num_by: number of bytes to compare
 *
-* Returns: 0 if strings are equal up to num_bytes, 1 otherwise
+* Return: 0 if strings are equal up to num_bytes, 1 otherwise
 */
 int stringcompare_func(const char *str_one, const char *str_two, size_t num_by)
 {
