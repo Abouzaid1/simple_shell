@@ -15,7 +15,9 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_byte
 	for (index = 0; index < num_bytes; index++)
 	{
 		if (str_one[index] != str_two[index])
+		{
 			return 1;
+		}
 	}
     return 0;
 }
@@ -57,7 +59,9 @@ char *strduplicate_func(const char *original)
     }
 
     for (index = 0; original[index] != '\0'; index++)
+	{
         duplicate[index] = original[index];
+	}
 
     duplicate[index] = '\0';
     return duplicate;
@@ -76,7 +80,9 @@ char *strcopy_func(char *destination, const char *source)
     int index;
 
     for (index = 0; source[index] != '\0'; index++)
+	{
         destination[index] = source[index];
+	}
 
     destination[index] = '\0';
     return destination;
@@ -93,16 +99,16 @@ char *strcopy_func(char *destination, const char *source)
 char *strconcat_func(char *destination, const char *source)
 {
     int destIndex, srcIndex;
-
     if (source == NULL)
+	{
         return destination;
-
+	}
     for (destIndex = 0; destination[destIndex] != '\0'; destIndex++)
         ;
-
     for (srcIndex = 0; source[srcIndex] != '\0'; srcIndex++)
+	{
         destination[srcIndex + destIndex] = source[srcIndex];
-
+	}
     destination[srcIndex + destIndex] = '\0';
     return destination;
 }
@@ -121,22 +127,18 @@ long int stringtoint_func(char *input_string)
 
     if (input_string == NULL)
         return -1;
-
     if (!input_string[1])
     {
         result = input_string[0] - '0';
         return result;
     }
-
     while (input_string[index] != '\0')
     {
         if (input_string[index] >= '0' && input_string[index] <= '9')
             result = (result * 10) + (input_string[index] - '0');
         else
             return -1;
-
         index++;
     }
-
     return result;
 }
