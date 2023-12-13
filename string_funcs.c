@@ -116,5 +116,5 @@ char *strconcat_func(char *destination, const char *source)
 		destination[srcIndex + destIndex] = source[srcIndex];
 	}
 	destination[srcIndex + destIndex] = '\0';
-	return destination;
+	return (destination);
 }
