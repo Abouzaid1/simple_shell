@@ -14,12 +14,12 @@ long int stringtoint_func(char *input_string)
 
 	if (input_string == NULL)
 	{
-		return -1;
+		return (-1);
 	}
 	if (!input_string[1])
 	{
 		result = input_string[0] - '0';
-		return result;
+		return (result);
 	}
 	while (input_string[index] != '\0')
 	{
@@ -29,9 +29,9 @@ long int stringtoint_func(char *input_string)
 		}
 		else
 		{
-			return -1;
+			return (-1);
 		}
 		index++;
 	}
-	return result;
+	return (result);
 }
