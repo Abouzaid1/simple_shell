@@ -23,7 +23,7 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_byte
 }
 
 /**
-* strLen_func - calculate length of input excluding \0
+* strLen_func - calculate length 
 *
 * @my_input: custom string
 * @my_length: length of input
@@ -126,7 +126,9 @@ long int stringtoint_func(char *input_string)
     int index = 0;
 
     if (input_string == NULL)
+	{
         return -1;
+	}
     if (!input_string[1])
     {
         result = input_string[0] - '0';
@@ -135,9 +137,13 @@ long int stringtoint_func(char *input_string)
     while (input_string[index] != '\0')
     {
         if (input_string[index] >= '0' && input_string[index] <= '9')
+		{
             result = (result * 10) + (input_string[index] - '0');
+		}
         else
+		{
             return -1;
+		}
         index++;
     }
     return result;
