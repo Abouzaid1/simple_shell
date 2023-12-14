@@ -5,40 +5,36 @@
 *
 * @str_one: first string
 * @str_two: second string
-* @num_b: number of bytes to compare
+* @num_bytes: number of bytes to compare
 *
-* Return: 0 if strings are equal up to num_bytes, 1 otherwise
+* Returns: 0 if strings are equal up to num_bytes, 1 otherwise
 */
-int stringcompare_func(const char *str_one, const char *str_two, size_t num_b)
+int stringcompare_func(const char *str_one, const char *str_two, size_t num_bytes)
 {
 	size_t index = 0;
-
-	for (index = 0; index < num_b; index++)
+	for (index = 0; index < num_bytes; index++)
 	{
 		if (str_one[index] != str_two[index])
-		{
-			return (1);
-		}
+			return 1;
 	}
-	return (0);
+    return 0;
 }
 
 /**
-* strLen_func - calculate length
+* strLen_func - calculate length of input excluding \0
 *
 * @my_input: custom string
-*
+* @my_length: length of input
+* 
 * Return: length of the custom string
 */
 int strLen_func(const char *my_input)
 {
-	int my_length = 0;
+    int my_length = 0;
 
-	for (my_length = 0; my_input[my_length] != '\0'; my_length++)
-	{
-		
-	}
-	return (my_length);
+    for (my_length = 0; my_input[my_length] != '\0'; my_length++);
+
+    return my_length;
 }
 
 /**
@@ -50,23 +46,21 @@ int strLen_func(const char *my_input)
 */
 char *strduplicate_func(const char *original)
 {
-	char *duplicate;
-	int index;
+    char *duplicate;
+    int index;
 
-	duplicate = malloc(sizeof(char) * (strLen_func(original) + 1));
-	if (duplicate == NULL)
-	{
-		perror("malloc");
-		exit(1);
-	}
+    duplicate = malloc(sizeof(char) * (strLen_func(original) + 1));
+    if (duplicate == NULL)
+    {
+        perror("malloc");
+        exit(1);
+    }
 
-	for (index = 0; original[index] != '\0'; index++)
-	{
-		duplicate[index] = original[index];
-	}
+    for (index = 0; original[index] != '\0'; index++)
+        duplicate[index] = original[index];
 
-	duplicate[index] = '\0';
-	return (duplicate);
+    duplicate[index] = '\0';
+    return duplicate;
 }
 
 /**
@@ -79,19 +73,17 @@ char *strduplicate_func(const char *original)
 */
 char *strcopy_func(char *destination, const char *source)
 {
-	int index;
+    int index;
 
-	for (index = 0; source[index] != '\0'; index++)
-	{
-		destination[index] = source[index];
-	}
+    for (index = 0; source[index] != '\0'; index++)
+        destination[index] = source[index];
 
-	destination[index] = '\0';
-	return (destination);
+    destination[index] = '\0';
+    return destination;
 }
 
 /**
-* strconcat_func - concatenate source string to destination string
+* customStrConcat - concatenate source string to destination string
 *
 * @destination: destination string to concatenate to
 * @source: source string to concatenate from
@@ -100,20 +92,17 @@ char *strcopy_func(char *destination, const char *source)
 */
 char *strconcat_func(char *destination, const char *source)
 {
-	int destIndex, srcIndex;
+    int destIndex, srcIndex;
 
-	if (source == NULL)
-	{
-		return (destination);
-	}
-	for (destIndex = 0; destination[destIndex] != '\0'; destIndex++)
-	{
-		
-	}
-	for (srcIndex = 0; source[srcIndex] != '\0'; srcIndex++)
-	{
-		destination[srcIndex + destIndex] = source[srcIndex];
-	}
-	destination[srcIndex + destIndex] = '\0';
-	return (destination);
+    if (source == NULL)
+        return destination;
+
+    for (destIndex = 0; destination[destIndex] != '\0'; destIndex++)
+        ;
+
+    for (srcIndex = 0; source[srcIndex] != '\0'; srcIndex++)
+        destination[srcIndex + destIndex] = source[srcIndex];
+
+    destination[srcIndex + destIndex] = '\0';
+    return destination;
 }
