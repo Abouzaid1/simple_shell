@@ -75,14 +75,8 @@ int exitfuncs(char **exitcommand)
             exit(exitStatus);
         }
 		else if (stringcompare_func(exitcommand[0], "exit", 4) != 0)
-		{
 			return (1);
-		}
 		else
-		{
 			return (-1);
-		}
     }
-
-    return -1;
 }
