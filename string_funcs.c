@@ -12,7 +12,7 @@
 int stringcompare_func(const char *str_one, const char *str_two, size_t num_b)
 {
 	size_t index = 0;
-	
+
 	for (index = 0; index < num_b; index++)
 	{
 		if (str_one[index] != str_two[index])
@@ -33,8 +33,8 @@ int strLen_func(const char *my_input)
 {
     int my_length = 0;
 
-    for (my_length = 0; my_input[my_length] != '\0'; my_length++);
-
+    for (my_length = 0; my_input[my_length] != '\0'; my_length++)
+		;
     return my_length;
 }
 

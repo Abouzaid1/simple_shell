@@ -9,7 +9,7 @@
 */
 long int stringtoint_func(char *input_string)
 {
-	long int result = 0;
+	int result = 0;
 	int index = 0;
 
 	if (input_string == NULL)
