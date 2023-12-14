@@ -66,12 +66,20 @@ int exitfuncs(char **exitcommand)
             exit(0);
         }
 
-        long int exitStatus = stringtoint_func(exitcommand[1]);
+        exitStatus = stringtoint_func(exitcommand[1]);
         if (exitStatus != -1)
         {
             all_command(exitcommand);
             exit(exitStatus);
         }
+		else if (_stringncmp(full_command[0], "exit", 4) != 0)
+		{
+			return (1);
+		}
+		else
+		{
+		return (-1);
+		}
     }
 
     return -1;
