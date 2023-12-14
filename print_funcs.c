@@ -2,10 +2,8 @@
 
 /**
 * prompt - gives shell_sign "$ " to the user
-* 
-* @void: the params 
 *
-* Return: void
+* Return: void of shell_sign
 */
 void prompt(void)
 {
