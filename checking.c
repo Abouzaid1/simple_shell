@@ -49,7 +49,7 @@ char *checkpathcorrection(const char *com)
     }
 	
     free(commanddub);
-    return NULL;
+    return (NULL);
 }
 
 /**
