@@ -2,7 +2,7 @@
 
 /**
 * prompt - gives "$ " prompt to the user
-* @shell_sign: the sign of the shell
+* 
 * Return: void
 */
 void prompt(void)
