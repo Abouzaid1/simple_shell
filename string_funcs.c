@@ -27,7 +27,6 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_by)
 * strLen_func - calculate length
 *
 * @my_input: custom string
-* @my_length: length of input
 *
 * Return: length of the custom string
 */
@@ -92,7 +91,7 @@ char *strcopy_func(char *destination, const char *source)
 }
 
 /**
-* customStrConcat - concatenate source string to destination string
+* strconcat_func - concatenate source string to destination string
 *
 * @destination: destination string to concatenate to
 * @source: source string to concatenate from
