@@ -15,7 +15,7 @@ int stringcompare_func(const char *str_one, const char *str_two, size_t num_b)
 
 	for (index = 0; index < num_b; index++)
 	{
-		if (str_one[index] != str_two[index])
+		if (str_one[index] == str_two[index])
 			continue;
 		return(1);
 	}
