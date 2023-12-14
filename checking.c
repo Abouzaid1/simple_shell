@@ -69,7 +69,7 @@ int exitfuncs(char **exitcommand)
         }
 
         exitStatus = stringtoint_func(exitcommand[1]);
-        if (stringcompare_func(exitcommand[0], "exit", 4) == 0 && status != -1)
+        if (stringcompare_func(exitcommand[0], "exit", 4) == 0 && exitStatus != -1)
         {
             all_command(exitcommand);
             exit(exitStatus);
