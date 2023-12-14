@@ -60,7 +60,7 @@ int exitfuncs(char **exitcommand)
 {
 		long int exitStatus;
 
-        if (!exitcommand[1])
+        if (stringcompare_func(exitcommand[0], "exit", 4) == 0 && !exitcommand[1])
         {
             all_command(exitcommand);
             exit(0);
