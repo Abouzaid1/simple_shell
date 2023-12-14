@@ -58,8 +58,6 @@ char *checkpathcorrection(const char *com)
  */
 int exitfuncs(char **exitcommand)
 {
-    if (stringcompare_func(exitcommand[0], "exit", 4) == 0)
-    {
 		long int exitStatus;
 
         if (!exitcommand[1])
@@ -78,5 +76,5 @@ int exitfuncs(char **exitcommand)
 			return (1);
 		else
 			return (-1);
-    }
+    
 }
