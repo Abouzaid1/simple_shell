@@ -42,12 +42,12 @@ char *checkpathcorrection(const char *com)
             }
         }
         free(newpath);
+		if (stat(commanddub, &buffaya) == 0)
+			return (commanddub);
         free(commanddub);
         return NULL;
     }
-	free(newpath);
-	if (stat(commanddub, &buffaya) == 0)
-			return (commanddub);
+	
     free(commanddub);
     return NULL;
 }
