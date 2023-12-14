@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
-* prompt - gives "$ " to the user
+* prompt - gives shell_sign "$ " to the user
 * 
 * Return: void
 */
